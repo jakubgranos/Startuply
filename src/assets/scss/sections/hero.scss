@@ -1,0 +1,43 @@
+.hero {
+  background: url(/images/bgd-header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+	height: 1428px;
+	
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      height: 950px;
+    }
+}
+
+.swiper-slide {
+	text-transform: uppercase;
+	color: $white;
+	cursor: pointer;
+	& h1{
+		font-size: 88px;
+		margin: 27px 0 58px;
+	}
+}
+
+
+//*SWIPER SLIDER *\\
+.swiper-container {
+  width: 100%;
+  height: 500px;
+}
+.swiper-pagination-bullets {
+  width: auto!important;
+}
+.swiper-pagination-bullet {
+  width: 32px !important;
+  height: 7px !important;
+  border-radius: 10px!important;
+}
+.swiper-pagination-bullet-active {
+  background: white!important;
+}
+//*SWIPER SLIDER *\\
