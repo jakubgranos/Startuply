@@ -1,0 +1,39 @@
+.development {
+  width: 100%;
+  border-top: 1px $white solid;
+  height: 700px;
+	display: flex;
+	&-overlay {
+    width: 370px;
+    height: 523px;
+    background: transparent;
+		transition: all ease 0.3s;
+		filter: brightness(6);
+    padding: 59px 40px 40px 59px;
+    
+		&:hover {
+      box-shadow: 0 15px 24px rgba(23, 3, 79, 0.1);
+      filter: none;
+      background: white;
+    }
+    & img {
+      padding: 0 0 31px 0;
+    }
+
+    & p {
+      color: black;
+      padding: 18px 0 0 0;
+    }
+	}  
+
+  &-hidden {
+	  transition: all ease 0.8s; 
+    height: 100%;
+    width: 350px;
+    opacity: 0;
+	
+		&:hover {
+  	  opacity: 1;
+    }
+  }
+}
