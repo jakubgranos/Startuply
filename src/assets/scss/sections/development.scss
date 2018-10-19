@@ -1,39 +1,63 @@
-.development {
+.slider-box {
   width: 100%;
-  border-top: 1px $white solid;
-  height: 700px;
-	display: flex;
-	&-overlay {
-    width: 370px;
+  height: auto;
+  border-top: 1px solid $white;
+  display: flex;
+  flex-direction: row;
+  &-container {
+    width: 33.33%;
     height: 523px;
-    background: transparent;
-		transition: all ease 0.3s;
-		filter: brightness(6);
-    padding: 59px 40px 40px 59px;
-    
-		&:hover {
+    padding: 59px 40px 59px 40px;
+    transition: all  0.2s;
+
+
+    &:hover {
+      background: $white;
       box-shadow: 0 15px 24px rgba(23, 3, 79, 0.1);
-      filter: none;
-      background: white;
     }
-    & img {
-      padding: 0 0 31px 0;
-    }
+  }
 
-    & p {
-      color: black;
-      padding: 18px 0 0 0;
-    }
-	}  
+  &-icon {
+ 
+    filter:brightness(7);
 
+  }
+
+  &-title {
+    padding: 31px 0 14px 0;
+  
+  }
+
+  &-text {
+    font-size: 16px;
+
+  }
+  
   &-hidden {
-	  transition: all ease 0.8s; 
-    height: 100%;
-    width: 350px;
-    opacity: 0;
-	
-		&:hover {
-  	  opacity: 1;
+    display: none;
+    padding: 57px 0 0 0;
+
+    & i {
+      padding: 0 7px 0 0;
+      color: #7c44fe;
     }
+  }
+}
+.slider-box-container:hover .slider-box-hidden {
+display: block;
+}
+.slider-box-container:hover .slider-box-icon {
+  display: block;
+  filter:brightness(1);
+}
+.slider-box-hidden {
+  & i {
+    padding: 5px;
+  }
+  & p:last-child {
+    cursor: pointer;
+    padding: 54px 0 0 0;
+    text-transform: uppercase;
+    color: #7c44fe;
   }
 }
