@@ -1,7 +1,8 @@
 .header {
-    position: absolute;
-    width: 100%;
-    border-bottom: 1px solid #ffffff33;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  border-bottom: 1px solid #ffffff33;
 }
 
 nav {
@@ -10,7 +11,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   color: $white;
-  height: 149px;
+	height: 149px;
+	
   & ul {
     margin: 0px;
     padding: 0px;
@@ -33,6 +35,5 @@ nav {
         border-radius: 28px;
       }
 		}    
-        
   }
 }

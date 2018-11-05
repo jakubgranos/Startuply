@@ -3,7 +3,8 @@
   height: auto;
   border-top: 1px solid $white;
   display: flex;
-  flex-direction: row;
+	flex-direction: row;
+	
   &-container {
     width: 33.33%;
     height: 523px;
@@ -18,19 +19,15 @@
   }
 
   &-icon {
- 
     filter:brightness(7);
-
   }
 
   &-title {
     padding: 31px 0 14px 0;
-  
   }
 
   &-text {
     font-size: 16px;
-
   }
   
   &-hidden {
@@ -44,7 +41,7 @@
   }
 }
 .slider-box-container:hover .slider-box-hidden {
-display: block;
+	display: block;
 }
 .slider-box-container:hover .slider-box-icon {
   display: block;
@@ -53,7 +50,8 @@ display: block;
 .slider-box-hidden {
   & i {
     padding: 5px;
-  }
+	}
+	
   & p:last-child {
     cursor: pointer;
     padding: 54px 0 0 0;
