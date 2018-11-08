@@ -6,4 +6,12 @@
  * Bootstrap breakpoints are set by deafult
  */
 
-$breakpoints: (sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+ $breakpoints: (
+  phone: 320px,
+  tablet: 750px,
+  desktop: 1248px
+);
+$max-width: 1169px;
+@include media('<tablet') {}
+@include media('>=tablet', '<desktop') {}
+@include media('>=desktop') {}

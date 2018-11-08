@@ -1,4 +1,5 @@
 import swiper from './modules/slider';
+import './modules/showing-menu.js'; 
 
 
 import getWindowUserAgent from './modules/userAgent';

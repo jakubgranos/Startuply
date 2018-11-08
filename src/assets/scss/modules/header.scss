@@ -13,11 +13,22 @@ nav {
   color: $white;
 	height: 149px;
 	
+	@include media('<desktop') {
+		flex-direction: column;
+		height: auto;
+		padding: 20px 0 20px 0;
+	}
+	
   & ul {
     margin: 0px;
     padding: 0px;
-    display: flex;
-		
+		display: flex;
+		@include media('<tablet') {
+			padding: 10px;
+			justify-content: center;
+			text-align: center;
+		}
+
 		& li {
       font-family:$font-roboto;
       list-style-type: none;
@@ -28,12 +39,38 @@ nav {
       transition: all 0.4s;
 			cursor: pointer;
       border-radius: 28px;
-      
+
+			@include media('<desktop') {
+				padding: 10px;
+			}
+
       &:hover {
         background: $white;
         color: $Electric-Violet;
         border-radius: 28px;
-      }
+			}
+	
 		}    
-  }
+	}
+
+}
+.openbtn{
+	position: absolute;
+	top: 9px;
+	right: 8px;
+	font-size: 40px;
+	display: none;
+	@include media('<desktop') {
+		display: block;
+	}
+}
+.sticky {
+	@include media('<desktop') {
+		width: 100%;
+		position: fixed;
+		z-index: 10;
+		left: 0;
+		top: 0;
+		background: #713ff3;
+	}
 }
