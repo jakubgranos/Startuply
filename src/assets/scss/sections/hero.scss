@@ -8,13 +8,16 @@
   z-index: 2;
   margin: 0 auto;
   position: absolute;
-  max-width: 1921px;
-	@include media('<desktop') { 
-		height: 1700px;
-	}
-	@include media('<=phone') { 
-		height: 1900px;
-	}
+	max-width: 1921px;
+	
+		@include media('<desktop') { 
+			height: 1700px;
+		}
+
+		@include media('<=phone') { 
+			height: 1900px;
+		}
+
   &-wrapper {
     display: flex;
     align-items: center;
@@ -29,12 +32,11 @@
   & h1{
     font-size: 88px;
 		margin: 27px 0 58px;
+		
 		@include media('<desktop') { 
 			font-size: 38px;
 		}
 	}
-
-
 }
 
 .box {
@@ -60,8 +62,3 @@
   background: white!important;
 }
 //*SWIPER SLIDER *\\
-.active{
-	background: $white;
-	box-shadow: 0 15px 24px rgba(23, 3, 79, 0.1);
-
-}

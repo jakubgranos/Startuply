@@ -25,6 +25,7 @@ nav {
 		display: flex;
 		@include media('<tablet') {
 			padding: 10px;
+			display: none;
 			justify-content: center;
 			text-align: center;
 		}
@@ -47,12 +48,15 @@ nav {
       &:hover {
         background: $white;
         color: $Electric-Violet;
-        border-radius: 28px;
+				border-radius: 28px;
+				
 			}
 	
 		}    
 	}
-
+}
+.login {
+	display: flex;
 }
 .openbtn{
 	position: absolute;
