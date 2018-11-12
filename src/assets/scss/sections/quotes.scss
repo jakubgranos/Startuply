@@ -1,0 +1,23 @@
+.page-quotes {
+	background-image: linear-gradient(to right, #934bff 0%, #5f3afc 100%);
+}
+.quotes-text{
+	padding: 100px 20px 100px 20px;
+	text-align: center;
+	
+	& h2 {
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 36px;
+	letter-spacing: 0px;
+	padding:  0 0 20px  0;
+ }
+
+}
+.about-slider {
+	height: auto;
+}
+.quote-pagination {
+	right: 0px;
+	bottom: 50px!important;
+}

@@ -1,13 +1,18 @@
 .slider-box {
   width: 100%;
-  height: auto;
+	height: 500px;
   border-top: 1px solid $white;
   display: flex;
 	flex-direction: row;
+
 	@include media('<desktop') {
 		flex-direction: column;
-
+		height: 820px
+	}	@include media('<tablet') {
+		flex-direction: column;
+    height: 879px;
 	}
+
   &-container {
     width: 33.33%;
     height: 523px;
@@ -17,8 +22,9 @@
 		@include media('<desktop') {
 			width: 100%;
 			height: auto;
-			padding: 9px 40px 59px 40px;
+			padding: 9px 40px 26px 40px;
 		}
+
     &:hover {
       background: $white;
       box-shadow: 0 15px 24px rgba(23, 3, 79, 0.1);
@@ -27,6 +33,7 @@
 
   &-icon {
 		filter:brightness(7);
+		
 		& img {
 			@include media('<desktop') {
 				width: 55px;

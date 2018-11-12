@@ -1,0 +1,60 @@
+<section class="page-projects">
+		<div class="container">
+			<div class="projects-container">
+				<div class="projects-container-text">
+					<div class="projects-header-text">
+						<p>our awsome work</p>
+						<h1>Our Latest Project</h1>
+					</div>
+					<div class="project-heder-menu">
+						<ul>
+						<li>All</li>
+						<li>Web Design</li>
+						<li>Graphic Desing</li>
+						<li>Branding</li>
+						<li>Marketing</li></ul>
+					</div>
+				</div>
+				<div class="projects-container-box">
+					@@loop('../modules/projects/projects.html', [
+						{
+							"box-img": "assets/images/projects-img-1.jpg",
+							"box-alt": "nice image",
+							"box-title": "Book Cover Design",
+							"box-paragraph": "Branding"
+						},
+						{
+							"box-img": "assets/images/projects-img-2.jpg",
+							"box-alt": "nice image",
+							"box-title": "Knight",
+							"box-paragraph": "Web development"
+						},
+						{
+							"box-img": "assets/images/projects-img-3.jpg",
+							"box-alt": "nice image",
+							"box-title": "Packging Design",
+							"box-paragraph": "Branding"
+						},
+						{
+							"box-img": "assets/images/projects-img-4.jpg",
+							"box-alt": "nice image",
+							"box-title": "Happy Onam",
+							"box-paragraph": "Web design"
+						},
+						{
+							"box-img": "assets/images/projects-img-5.jpg",
+							"box-alt": "nice image",
+							"box-title": "Rags",
+							"box-paragraph": "Branding"
+						},
+						{
+							"box-img": "assets/images/projects-img-6.jpg",
+							"box-alt": "nice image",
+							"box-title": "Product Design",
+							"box-paragraph": "Markting"
+						}
+					])
+				</div>
+			</div>
+		</div>
+</section>
