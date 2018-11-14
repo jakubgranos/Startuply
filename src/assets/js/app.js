@@ -1,6 +1,6 @@
 import swiper from './modules/slider';
 import './modules/showing-menu.js'; 
-
+import './modules/video.js'; 
 
 import getWindowUserAgent from './modules/userAgent';
 window.onload = () => {
