@@ -6,19 +6,12 @@ import Swiper from 'swiper';
 	},
 });
 
-$('#slide0').on('click', function() {
-  swiper.slideTo(0);
-
+$('#slide0').click(swiper,function(){
+	swiper.slideTo(0);
 });
-$('#slide1').on('click', function() {
-  swiper.slideTo(1);
-
+$('#slide1').click(swiper,function(){
+	swiper.slideTo(1);
 });
-$('#slide2').on('click', function() {
-  swiper.slideTo(2);
-
-});
-
-$('.slider-box-container').click(function() {
-	$(this).addClass('active').siblings().removeClass('active');
+$('#slide2').click(swiper,function(){
+	swiper.slideTo(2);
 });
