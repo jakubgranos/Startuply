@@ -1,7 +1,6 @@
 .page-about {
-  background: url("../images/bgd-about.png");
+  background: $white;
   background-repeat: no-repeat;
-  background-size: cover;
   z-index: -1;
   width: 100%;
   &-text {
@@ -51,4 +50,11 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
+}
+.about-triangle {
+	background: url("../images/bgd-about.png");
+  background-repeat: no-repeat;
+	z-index: -1;
+	height: 200px;
+  width: 100%;
 }
