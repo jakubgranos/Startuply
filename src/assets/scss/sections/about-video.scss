@@ -11,15 +11,15 @@
 	align-items: center;
 	transition: opacity 1s ease;
 	color: white;
+
+	@include media('<desktop') { 
+		height: 450px;
+	}
 	
 	&.clicked{
 		opacity:0;
 		pointer-events: none;
 	}
-}
-.col {
-	display: flex;
-	flex-direction: column;
 }
 .col-text p {
 	text-transform: uppercase;
@@ -29,13 +29,22 @@
 .col-numbers {
 	display: flex;
 	justify-content: end;
+	
 }
 .number-box {
 	padding: 40px 70px 0 0px;
 
+	@include media('<tablet') { 
+		padding: 20px 25px 0 0px;
+	}
+
 	& h1 {
 		font-weight: bold;
 		font-size: 45px;
+
+		@include media('<tablet') { 
+			font-size: 25px;
+		}
 	}
 
 	& p {
@@ -47,9 +56,16 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+
+	@include media('<desktop') { 
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
 }
 .video-btn {
 	border: 1px solid;
+	margin: 20px 0 0 0;
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
@@ -60,9 +76,11 @@
 	height: 100px;
 	background-size: cover;
 	position: absolute;
-	top: 25px;
+	top: 45px;
 	left: 38px;
 	cursor: pointer;
+
+
 }	
 .player iframe {
 	width: 100%;
