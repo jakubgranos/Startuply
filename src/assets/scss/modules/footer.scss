@@ -1,0 +1,11 @@
+.footer-navigate{
+	border-top: 1px solid $white;	
+	color: #999999;
+}
+.footer-text{
+	color: #999999;
+
+	& span {
+		color: $white;
+	}
+}

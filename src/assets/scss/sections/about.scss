@@ -33,7 +33,7 @@
 .read-more {
 	cursor: pointer;
 	text-transform: uppercase;
-	color: #7c44fe;
+	color: $Electric-Violet;
 	padding: 30px 0 0 0;
 	@include media('<tablet') {
 		padding: 20px 0 0 0;
