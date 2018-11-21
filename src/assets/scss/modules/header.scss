@@ -71,12 +71,12 @@ nav {
 }
 
 .sticky {
-	@include media('<desktop') {
-		width: 100%;
-		position: fixed;
-		z-index: 10;
-		left: 0;
-		top: 0;
-		background: #713ff3;
-	}
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	background: $Electric-Violet;
+	border-bottom: 1px solid $white;
+	padding: 20px;
 }

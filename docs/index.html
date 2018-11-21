@@ -20,15 +20,15 @@
      		<!-- page header code here -->
      		<div class="container">
 
-     			<nav class="sticky">
+     			<nav class="menu">
      				<h2>Startuply.</h2>
      				<ul class="navigate">
-     					<li>home</li>
-     					<li>about</li>
-     					<li>services</li>
-     					<li>team</li>
-     					<li>blog</li>
-     					<li>contact us</li>
+     					<li id="link1">home</li>
+     					<li id="link2">about</li>
+     					<li id="link3">services</li>
+     					<li id="link4">team</li>
+     					<li id="link5">blog</li>
+     					<li id="link6">contact us</li>
      				</ul>
      				<ul class="login">
      					<li>Login</li>
@@ -39,7 +39,7 @@
      		</div>
      </header>
     <main id="page-content">
-			<section class="hero">
+			<section class="hero" id="home">
 					<div class="container">
 						<div class="hero-wrapper">
 							<div class="swiper-container">
@@ -103,7 +103,7 @@
 					</div>
 					<div class="about-triangle"></div>
 				</section>
-			<section class="page-about">
+			<section class="page-about" id="about">
 				<div class="page-about-text">
 			  	<h6>about our history</h6>
 			  	<h1>We are Startuply and we create <br>
@@ -262,7 +262,7 @@
 				<iframe id="video"  src="https://www.youtube.com/embed/40vEU0sNTXY"   frameborder="0" allowfullscreen></iframe>
 			</div>
 
-			<section class="page-blog">
+			<section class="page-blog" id="blog">
 				<div class="container">
 					<div class="page-blog-header">
 						<p>our blog</p>
@@ -304,7 +304,7 @@
 			<section class="page-informations">
 				<div class="informations-rectangle"></div>
 				<div class="page-informations-wrapper">
-					<div class="container">
+					<div class="container" id="contact">
 						<div class="row">
 							<div class="col col-12 col-lg-3 ">
 								<h1>startuply.</h1>
@@ -355,5 +355,5 @@
     </main>
   </body>
   <script src="assets/js/bundle.js"></script>
-
+  <script src="assets/js/jquery.scrollTo.min.js"></script>
 </html>

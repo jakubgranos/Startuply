@@ -12,7 +12,7 @@
 	color: $white;
 
 	@include media('<desktop') { 
-		height: 450px;
+		height: 550px;
 	}
 	
 	&.clicked{
