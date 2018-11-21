@@ -84,5 +84,8 @@
 }	
 .player iframe {
 	width: 100%;
-	height: 340px;
+	height: 350px;
+	@include media('<desktop') { 
+		height: 450px;
+	}
 }

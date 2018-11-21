@@ -4,5 +4,32 @@
 			<p>our blog</p>
 			<h1>Latest News</h1>
 		</div>
+
+		<div class="blog-box-container">
+			@@loop('../modules/blog/blog-items.html', [
+			{
+				"box-img": "assets/images/blog-img-1.png",
+				"box-alt": "simple image",
+				"box-date": "january 25.2017 / art & design",
+				"box-title": "Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit sed do",
+				"box-paragraph": "read more"
+
+			},
+			{
+				"box-img": "assets/images/blog-img-1.png",
+				"box-alt": "simple image",
+				"box-date": "january 25.2017 / art & design",
+				"box-title": "Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit sed do",
+				"box-paragraph": "read more"
+			},
+			{
+				"box-img": "assets/images/blog-img-1.png",
+				"box-alt": "simple image",
+				"box-date": "january 25.2017 / art & design",
+				"box-title": "Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit sed do",
+				"box-paragraph": "read more"
+			}
+		])
+		</div>
 	</div>
 </section>
